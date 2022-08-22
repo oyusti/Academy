@@ -1,6 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TeacherController;
+use App\Http\Controllers\SchoolController;
+use App\Http\Controllers\CourseController;
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -16,6 +21,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::resource('teachers', TeacherController::class)->middleware(['auth'])->except('show');
+Route::resource('schools', SchoolController::class)->middleware(['auth'])->except('show');
+Route::resource('courses', CourseController::class)->middleware(['auth'])->except('show');
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');
