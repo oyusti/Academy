@@ -4,31 +4,35 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TeacherController;
 use App\Http\Controllers\SchoolController;
 use App\Http\Controllers\CourseController;
+use App\Http\Controllers\PageController;
 
 
-
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
-
-Route::get('/', function () {
+/* Route::get('/', function () {
     return view('welcome');
+});  */
+
+Route::controller(PageController::class)->group(function(){
+    Route::get('/',                 'home')         ->name('home');
+    Route::get('/{course:slug}',    'course')       ->name('course');
 });
 
-Route::resource('teachers', TeacherController::class)->middleware(['auth'])->except('show');
-Route::resource('schools', SchoolController::class)->middleware(['auth'])->except('show');
-Route::resource('courses', CourseController::class)->middleware(['auth'])->except('show');
+/* Route::get('/', function () {
+    return view('home')->name('home');
+}); */
+
+Route::resource('teachers', TeacherController::class)   ->middleware(['auth']);
+Route::resource('schools',  SchoolController::class)    ->middleware(['auth']);
+Route::resource('courses',  CourseController::class)    ->middleware(['auth']);
 
 
-Route::get('/dashboard', function () {
+Route::redirect('dashboard', 'courses')->name('dashboard');
+
+/* Route::get('/dashboard', function () {
     return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+})->middleware(['auth'])->name('dashboard'); */
+
+/* Route::get('auth.login', function () {
+    return view('auth.login');
+})->name('login'); */
 
 require __DIR__.'/auth.php';

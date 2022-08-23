@@ -18,9 +18,14 @@ class CourseController extends Controller
         return view('courses.index',['courses' =>  $courses]);
     }
 
-    public function create(School $school)
+    public function show(Course $course)
     {
-        return view('schools.create',['school' => $school]);
+        return view('courses.show',['course' => $course]);
+    }
+
+    public function create(Course $course)
+    {
+        return view('courses.create',['course' => $course]);
     }
 
     public function store(Request $request)// Con estos parametros recupero lo que envia un usuario
@@ -38,12 +43,12 @@ class CourseController extends Controller
         return redirect()->route('schools.index', $school);
     }
 
-    public function edit(School $school)
+    public function edit(Course $course)
     {
-        return view('schools.edit',['school' => $school]); 
+        return view('courses.edit',['course' => $course]); 
     }
 
-    public function update(Request $request, School $school)
+    public function update(Request $request, Course $course)
     {
         $request->validate([
             'name'          => 'required',
@@ -58,9 +63,9 @@ class CourseController extends Controller
     }    
 
     //agregamos el metodo para eliminar
-    public function destroy(School $school)
+    public function destroy(Course $course)
     {
-        $school->delete();
+        $course->delete();
         return back();
     } 
 }

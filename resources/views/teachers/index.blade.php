@@ -27,9 +27,10 @@
                     @foreach ($teachers as $teacher)
                     <tbody>
                         <tr class="border-b border-gray-200 text-sm">
-                                <td class="px-6 py-4">{{ $teacher->name }}</td>
+                                <td class="px-6 py-4"><a href="{{ route('teachers.show', $teacher) }}" class="text-indigo-600">{{ $teacher->name }}</a></td>
                                 <td class="px-6 py-4">{{ $teacher->profession }}</td>
                                 <td class="px-6 py-4">{{ substr($teacher->about,0,60) }}...</td>
+                            
                             <td class="px-6 py-4">
                                 <a href="{{ route('teachers.edit', $teacher) }}" class="text-indigo-600">Editar</a>
                             </td>

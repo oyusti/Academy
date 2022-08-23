@@ -29,7 +29,7 @@
                     @foreach ($courses as $course)
                     <tbody>
                         <tr class="border-b border-gray-200 text-sm">
-                                <td class="px-6 py-4">{{ $course->name }}</td>
+                                <td class="px-6 py-4"><a href="{{ route('courses.show', $course) }}" class="text-indigo-600">{{ $course->name }}</a></td>
                                 <td class="px-6 py-4">{{ $course->hour_theo }}</td>
                                 <td class="px-6 py-4">{{ $course->teacher->name }}</td>
                                 <td class="px-6 py-4">{{ $course->school->name }}</td>

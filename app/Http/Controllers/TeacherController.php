@@ -18,6 +18,11 @@ class TeacherController extends Controller
         return view('teachers.index',['teachers' =>  $teachers]);
     }
 
+    public function show(Teacher $teacher)
+    {
+        return view('teachers.show',['teacher' => $teacher]); 
+    }
+
     public function create(Teacher $teacher)
     {
         return view('teachers.create',['teacher' => $teacher]);
@@ -67,4 +72,5 @@ class TeacherController extends Controller
         $teacher->delete();
         return back();
     }
+
 }

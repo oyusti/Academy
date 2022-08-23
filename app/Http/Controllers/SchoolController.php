@@ -16,6 +16,11 @@ class SchoolController extends Controller
         return view('schools.index',['schools' =>  $schools]);
     }
 
+    public function show(School $school)
+    {
+        return view('schools.show',['school' => $school]);
+    }
+
     public function create(School $school)
     {
         return view('schools.create',['school' => $school]);

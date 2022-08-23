@@ -21,6 +21,9 @@
                     <x-nav-link :href="route('schools.index')">
                         {{ __('Escuelas') }}
                     </x-nav-link>
+                    <x-nav-link :href="route('courses.index')">
+                        {{ __('Cursos') }}
+                    </x-nav-link>
                 </div>
             </div>
 

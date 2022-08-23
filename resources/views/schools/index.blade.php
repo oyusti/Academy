@@ -26,7 +26,7 @@
                     @foreach ($schools as $school)
                     <tbody>
                         <tr class="border-b border-gray-200 text-sm">
-                                <td class="px-6 py-4">{{ $school->name }}</td>
+                                <td class="px-6 py-4"><a href="{{ route('schools.show', $school) }}" class="text-indigo-600">{{ $school->name }}</a></td>
                                 <td class="px-6 py-4">{{ substr($school->description,0,80) }}...</td>
                             <td class="px-6 py-4">
                                 <a href="{{ route('schools.edit', $school) }}" class="text-indigo-600">Editar</a>
