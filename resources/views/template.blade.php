@@ -26,9 +26,9 @@
                 <a href="{{ route('dashboard') }}">Dashboard</a>
             @else
                 <a href="{{ route('login') }}">Login</a>
-            <!-- @if (Route::has('register'))
+            @if (Route::has('register'))
                 <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Register</a>
-            @endif -->
+            @endif
             @endauth
         </header>
         <div class="opacity-60 h-px mb-8" style="
