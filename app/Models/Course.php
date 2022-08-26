@@ -27,4 +27,9 @@ class Course extends Model
     {
         return $this->belongsTo(Teacher::class);
     }
+
+    public function students()//muchos a muchos
+    {
+        return $this->belongstoMany(Student::class);
+    }
 }
