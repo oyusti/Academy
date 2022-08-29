@@ -10,7 +10,7 @@
 <img src="https://img.shields.io/github/stars/oyusti?style=social"
 </p>
 
-
+    
 ## About Devs Academy
 
 <p>Devs Academy is a project still in development that represents an online academy for developers. This project is made with the Laravel framework together with other technologies mentioned below. In it, the Breeze package is used to perform the system authentication as well as to rely on the styles that it already incorporates with Tailwindcss</p>
@@ -40,6 +40,13 @@
 - NodeJS 16.17.0
 - NPM 8.15.0
 - Git 2.25.1
+
+## Devs Academy Images
+
+<img src="https://user-images.githubusercontent.com/65675939/187304719-b3d434cd-b35b-4426-a51e-538fa9d563e4.png">
+<img src="https://user-images.githubusercontent.com/65675939/187304764-f7ee38d6-27da-4682-82b7-bccff56390c6.png">
+<img src="https://user-images.githubusercontent.com/65675939/187304786-e38ee556-7c6b-4c64-ace3-7633bd7b94f1.png">
+
 
 ## How to Install
 
