@@ -1,5 +1,6 @@
 
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="![logo](https://user-images.githubusercontent.com/65675939/187299667-431d45e6-8685-4101-92ff-7f0a7ae0fa90.png)" width="400"></a></p>
+
 
 <h1 align="center"> Devs Academy </h1>
 <p align="center">
@@ -18,11 +19,13 @@
 
 
 - Connection with database.
-- Use of Eloquent ORM for data handling.
-- One-to-many relationship between tables
-- Routes created for the web server and api.
-- Creation of private API with authentication system.
-- Use of classes for the frontend created with tailwinds css.
+- It has 2 interfaces. An interface for the public part and a private interface for administration
+- Use of Eloquent ORM for data handling
+- CRUD management for data management
+- Relationship between tables
+- Routes created for the web server for the public and private part
+- Authentication system with Breeze
+- Use of classes for the frontend created with tailwinds css
 
 
 ## Used technology
@@ -31,12 +34,11 @@
 - Composer 2.4.0
 - PHP 8.0.2
 - Laravel/framework 9.19
-- breeze: 1.12
+- Breeze 1.12
 - Tailwindcss
 - Mysql 8.0.30
 - NodeJS 16.17.0
 - NPM 8.15.0
-- Postman 9.29
 - Git 2.25.1
 
 ## How to Install
