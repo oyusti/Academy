@@ -1,19 +1,20 @@
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
-<h1 align="center"> API </h1>
+<h1 align="center"> Devs Academy </h1>
 <p align="center">
 <img src="https://img.shields.io/github/issues/oyusti/academy">
 <img src="https://img.shields.io/github/forks/oyusti/academy">
-<img src="https://img.shields.io/badge/status-Developing-red">
+<img src="https://img.shields.io/badge/status-Under_Development-green">
 <img src="https://img.shields.io/github/stars/oyusti?style=social"
 </p>
 
 
-## About API
+## About Devs Academy
 
-<p>It is a very simple web application where it is reflected how to connect a third-party application with a web server worked in Laravel.
-It is an application with educational purposes due to its level of simplicity. In it you will find the following functionalities:</p>
+<p>Devs Academy is a project still in development that represents an online academy for developers. This project is made with the Laravel framework together with other technologies mentioned below. In it, the Breeze package is used to perform the system authentication as well as to rely on the styles that it already incorporates with Tailwindcss</p>
+
+<p>In it you will find the following functionalities:</p>
 
 
 - Connection with database.
@@ -27,15 +28,16 @@ It is an application with educational purposes due to its level of simplicity. I
 ## Used technology
 
 - Ubuntu 20.04
-- Composer
+- Composer 2.4.0
 - PHP 8.0.2
 - Laravel/framework 9.19
+- breeze: 1.12
 - Tailwindcss
 - Mysql 8.0.30
 - NodeJS 16.17.0
 - NPM 8.15.0
 - Postman 9.29
-- Git
+- Git 2.25.1
 
 ## How to Install
 
