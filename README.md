@@ -57,7 +57,7 @@ In the terminal
 
    
    
-        git clone git@github.com:oyusti/api.git
+        git clone git@github.com:oyusti/Academy.git
    
    
    
@@ -65,7 +65,7 @@ In the terminal
 
 
 
-        cd api
+        cd academy
         
 
 
