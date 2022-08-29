@@ -65,7 +65,7 @@ In the terminal
 
 
 
-        cd academy
+        cd Academy
         
 
 
@@ -87,7 +87,7 @@ In the terminal
 -   In "env" you must also add "APP_KEY" since it will be empty, for this we write in the terminal: 
 
 
-        php artisan key: generate
+        php artisan key:generate
 
 
 -   We will now create the tables and records in the database. In the terminal execute 
@@ -96,6 +96,11 @@ In the terminal
         php artisan migrate --seed
         
         
+-   If you want the empty tables without records execute the following
+
+        php artisan migrate
+
+
 -   Remember to always execute the command "npm run dev" in the terminal when starting the server, otherwise you will get an error
 
         npm run dev
