@@ -1,5 +1,5 @@
 
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://user-images.githubusercontent.com/65675939/187299667-431d45e6-8685-4101-92ff-7f0a7ae0fa90.png" width="400"></a></p>
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://user-images.githubusercontent.com/65675939/187299667-431d45e6-8685-4101-92ff-7f0a7ae0fa90.png" width="200"></a></p>
 
 
 <h1 align="center"> Devs Academy </h1>
