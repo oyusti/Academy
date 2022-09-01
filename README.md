@@ -1,64 +1,113 @@
-<<<<<<< HEAD
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://user-images.githubusercontent.com/65675939/187299667-431d45e6-8685-4101-92ff-7f0a7ae0fa90.png" width="200"></a></p>
+
+
+<h1 align="center"> Devs Academy </h1>
 <p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+<img src="https://img.shields.io/github/issues/oyusti/academy">
+<img src="https://img.shields.io/github/forks/oyusti/academy">
+<img src="https://img.shields.io/badge/status-Under_Development-green">
+<img src="https://img.shields.io/github/stars/oyusti?style=social"
 </p>
 
-## About Laravel
+    
+## About Devs Academy
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+<p>Devs Academy is a project still in development that represents an online academy for developers. This project is made with the Laravel framework together with other technologies mentioned below. In it, the Breeze package is used to perform the system authentication as well as to rely on the styles that it already incorporates with Tailwindcss</p>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+<p>In it you will find the following functionalities:</p>
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## Learning Laravel
+- Connection with database.
+- It has 2 interfaces. An interface for the public part and a private interface for administration
+- Use of Eloquent ORM for data handling
+- CRUD management for data management
+- Relationship between tables
+- Routes created for the web server for the public and private part
+- Authentication system with Breeze
+- Use of classes for the frontend created with tailwinds css
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Used technology
 
-## Laravel Sponsors
+- Ubuntu 20.04
+- Composer 2.4.0
+- PHP 8.0.2
+- Laravel/framework 9.19
+- Breeze 1.12
+- Tailwindcss
+- Mysql 8.0.30
+- NodeJS 16.17.0
+- NPM 8.15.0
+- Git 2.25.1
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+## Devs Academy Images
 
-### Premium Partners
+<img src="https://user-images.githubusercontent.com/65675939/187304719-b3d434cd-b35b-4426-a51e-538fa9d563e4.png">
+<img src="https://user-images.githubusercontent.com/65675939/187304764-f7ee38d6-27da-4682-82b7-bccff56390c6.png">
+<img src="https://user-images.githubusercontent.com/65675939/187304786-e38ee556-7c6b-4c64-ace3-7633bd7b94f1.png">
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
 
-## Contributing
+## How to Install
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+It is necessary that prior to installation you must have installed PHP, Laravel, Mysql or the relational database of your choice, Composer, NodeJS with NPM
 
-## Code of Conduct
+-   First, Go to the directory where you want to install and clone the project
+In the terminal
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+   
+   
+        git clone git@github.com:oyusti/Academy.git
+   
+   
+   
+-   In the terminal Enter the directory 
 
-## Security Vulnerabilities
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+
+        cd Academy
+        
+
+
+-   run "composer install" to install dependencies and then "npm install"
+
+
+        composer install
+        npm install
+
+   
+-   Copy the "env_example" file and create the "env" file
+
+-   In your code editor open "env" and put in "DB_DATABASE" the name of your preference for the database.
+
+-   Then create that same database in your database manager. If for example you created DB_DATABASE = admin in the "env" file, you would also create a database with the same name.
+
+-   In the "env" file you must also modify the parameter "DB_USERNAME" which will be the username to access the database and "DB_PASSWORD" which will be the password.
+
+-   In "env" you must also add "APP_KEY" since it will be empty, for this we write in the terminal: 
+
+
+        php artisan key:generate
+
+
+-   We will now create the tables and records in the database. In the terminal execute 
+
+
+        php artisan migrate --seed
+        
+        
+-   If you want the empty tables without records execute the following
+
+        php artisan migrate
+
+
+-   Remember to always execute the command "npm run dev" in the terminal when starting the server, otherwise you will get an error
+
+        npm run dev
+
+
+That is all... Happy Code!
+
 
 ## License
 
