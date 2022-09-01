@@ -13,7 +13,7 @@
     
 ## About Devs Academy
 
-<p>Devs Academy is a project still in development that represents an online academy for developers. This project is made with the Laravel framework together with other technologies mentioned below. In it, the Breeze package is used to perform the system authentication as well as to rely on the styles that it already incorporates with Tailwindcss</p>
+<p>Devs Academy is a project still in development that represents an online academy for developers. This project is made with the Laravel framework together with other technologies mentioned below. In it, the Breeze package is used to perform the system authentication as well as to rely on the styles that it already incorporates with Tailwindcss. It is also coded for connection with third-party APIs with authentication through Laravel Sanctum.</p>
 
 <p>In it you will find the following functionalities:</p>
 
@@ -23,8 +23,9 @@
 - Use of Eloquent ORM for data handling
 - CRUD management for data management
 - Relationship between tables
-- Routes created for the web server for the public and private part
-- Authentication system with Breeze
+- Private API
+- Routes created for the web server and APIs for the public and private part
+- Authentication system with Breeze for the web site and sanctum authentication for APIs connection
 - Use of classes for the frontend created with tailwinds css
 
 
@@ -40,6 +41,7 @@
 - NodeJS 16.17.0
 - NPM 8.15.0
 - Git 2.25.1
+- Postman 9.29.0
 
 ## Devs Academy Images
 
